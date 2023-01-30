@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.row{
+    margin: 1rem;
+    color: #fff;
+}
+.row h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.moviesRow{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+.moviesRow::-webkit-scrollbar{
+    display: none;
+}
+.moviesRow.big img{
+    width: 200px;
+    margin-right: 10px;
+    
+}
+.moviesRow img{
+    width: 150px;
+    margin-right: 10px; 
+}
+
+
+.banner{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    color: dodgerblue;
+}
+.banner a{
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.5);
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.banner a:hover{
+    background-color: #ffff;
+    color: dodgerblue;
+}
+.banner h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.banner p{
+    width: 40vw;
+    padding-top: 1rem;
+    line-height: 1.4;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 3rem;
+    transition: all 1s ease-in-out;
+}
+.logo img{
+    width: 150px;
+}
+nav img{
+    width: 40px;
+}
+header.dark{
+    background-color: #000;
+}
