@@ -9,7 +9,9 @@ function Netflix() {
   return (
     <div className='netflix'>
       <Header/>
-      <Banner/>
+      
+        <Banner/>
+      
 
         <Row endPoint = {requests.fetchNetflixOriginals} heading = 'Netflix Original' big = {true}/>
         <Row endPoint = {requests.fetchTrending} heading = 'Trending'/>

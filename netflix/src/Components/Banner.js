@@ -18,6 +18,7 @@ function Banner() {
             })
         }
         fetchBanner()
+        setInterval(()=>{fetchBanner()},8000)
     },[])
     
   return (
